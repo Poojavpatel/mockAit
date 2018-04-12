@@ -1,0 +1,82 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+*{
+	box-sizing:border-box;
+}
+.fullcontent{
+	margin: 1rem 2rem;
+}
+h1{
+	font-size: 1.5rem;
+	color: #454547;
+	margin: 5% auto 3% auto;
+	text-align: center;
+}
+
+/******************** Imp ********************/
+
+.animationbox{
+	width:70vh;
+	height:70vh;
+	position: relative;
+	margin: 0 auto;
+}
+.sky{
+	height: 70%;
+	width:100%;
+	position: absolute;
+	top: 0;
+	background-color:#1b6d8d;
+	z-index: 1;
+	animation:skyglow 10s infinite;
+}
+.ground{
+	height: 30%;
+	width:100%;
+	position: absolute;
+	bottom: 0;
+	background-color: #0c840c;
+	z-index: 2;
+	animation:groundglow 10s infinite;
+}
+.sun{
+	height: 30%;
+	width:30%;
+	position: absolute;
+	bottom: 0%;
+	right:10%;
+	background-color: yellow;
+	border-radius: 50%;
+	z-index:1;
+	animation:sunrise 10s infinite , glow 10s infinite;;
+}
+@keyframes sunrise{
+	0%{
+		transform:translateY(0%);
+	}
+	100%{
+		transform:translateY(-180%);
+	}
+}
+@keyframes skyglow{
+	0%{
+		background-color:#1b6d8d; 
+	}
+	100%{
+		background-color: #37b5e7;
+	}
+}
+@keyframes groundglow{
+	0%{
+		background-color: #0c840c; 
+	}
+	100%{
+		background-color: #13ba13;
+	}
+}
+
