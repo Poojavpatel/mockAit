@@ -14,9 +14,19 @@ body{
 h1{
 	font-size: 1.5rem;
 	color: #454547;
-	margin: 5% auto 3% auto;
+	margin: 3% auto 3% auto;
 }
 
 /******************** Imp ********************/
 
-
+.bx{
+	height: 30vh;
+	width: 100%;
+	background: -webkit-linear-gradient(left, #283c86, #45a247);
+	background:  linear-gradient(left, #283c86, #45a247);
+}
+.bx1{
+	height: 30vh;
+	width: 100%;
+	background: radial-gradient(yellow, #009966, purple);
+}
