@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+*{
+	box-sizing:border-box;
+}
+.fullcontent{
+	margin: 1rem 2rem;
+	padding: 0 7%;
+}
+h1{
+	font-size: 1.5rem;
+	color: #454547;
+	margin: 3rem auto 1rem auto;
+}
+
+/******************** Imp ********************/
+
+.demo{
+	min-height: 30vh;
+	display: block;
+	border: 2px solid #454547;
+	margin: 2%;
+	padding: 2%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+.box1{
+	background-color: #4682B4;
+}
+.box01:hover .box1{
+	transform:translateX(200px);
+}
+.box2{
+	background-color: #48D1CC;
+}
+.box2:hover{
+	transform:scale(2);
+}
+.box3{
+	background-color: #87CEEB;
+}
+.box3:hover{
+	transform:rotate(110deg);
+}
+.box4{
+	background-color: yellow;
+}
+.box4:hover{
+	transform:skew(50deg);
+}
+.box5{
+	background-color: purple;
+}
+.box5:hover {
+	transform: matrix(1, -0.3,0,1,0,0);
+}
