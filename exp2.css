@@ -18,14 +18,23 @@ h1{
 }
 
 /******************** Imp ********************/
-
-@font-face {
-    font-family: myFirstFont;
-    src: url(AlexBrush-Regular.ttf);
+.shade{
+	font-size: 2.5rem;
+	margin-top: 0;
+	text-shadow: 2px 2px 8px #86C232;
+	color: #61892F;
 }
-h3{
-    font-family: myFirstFont;
-    font-size: 3rem;
+.mybox{
+	min-height: 40vh;
+	width: 100%;
+	display: flex;
+}
+.innerbox{
+	width: 400px;
+	height: 200px;
+	margin: auto;
+	background-color: #86C232;
+	box-shadow: 20px 20px 20px 0px black;
 }
 
 
